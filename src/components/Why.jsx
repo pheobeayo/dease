@@ -15,42 +15,42 @@ const Why = () => {
             </div>
             <div>
                 <div className="flex gap-2 flex-col lg:flex-row md:flex-row items-center px-4 lg:px-8 md:px-8">
-                    <div className="lg:w-[50%] md:w-[50%] w-[100%] bg-[#8BB9FF]/10 rounded-xl p-8">
+                    <div className="lg:w-[50%] md:w-[50%] w-[100%] bg-gradient-to-tl from-[#8BB9FF]/10 to-[#02071D] rounded-xl p-8 border-2 border-[#262B3B] shadow-lg">
                         <div className="grid place-content-center">
                             <img src={why} alt="" className="w-[100%]" />
                         </div>
-                        <h5 className="text-white text-justify px-2 text-base font-dmsans font-semibold">Streamlined Workflow</h5>
-                        <p className="text-white text-justify px-2 text-base font-dmsans font-normal">
+                        <h5 className="text-white text-justify p-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-semibold">Streamlined Workflow</h5>
+                        <p className="text-white text-justify px-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-normal">
                             Deploy tokens effortlessly with our user-friendly interface, saving
                             you time and reducing errors.
                         </p>
                     </div>
-                    <div className="lg:w-[50%] md:w-[50%] w-[100%]  bg-[#8BB9FF]/10 rounded-xl p-8">
+                    <div className="lg:w-[50%] md:w-[50%] w-[100%] bg-gradient-to-tl from-[#8BB9FF]/10 to-[#02071D] rounded-xl p-8 border-2 border-[#262B3B] shadow-lg">
                         <div className="grid place-content-center">
                             <img src={why1} alt="" className="w-[100%]" />
                         </div>
-                        <h5 className="text-white text-justify px-2 text-base font-dmsans font-semibold">Comprehensive Insights</h5>
-                        <p className="text-white text-justify px-2 text-base font-dmsans font-normal">
+                        <h5 className="text-white text-justify p-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-semibold">Comprehensive Insights</h5>
+                        <p className="text-white text-justify px-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-normal">
                             Access a detailed history of deployed tokens, total supply, and balances through a centralized dashboard.
                         </p>
                     </div>
                 </div>
                 <div className="mt-4 gap-2 flex justify-between flex-col lg:flex-row md:flex-row items-center px-4 lg:px-8 md:px-8">
-                    <div className="lg:w-[50%] md:w-[50%] w-[100%] bg-[#8BB9FF]/10 rounded-xl p-8">
+                    <div className="lg:w-[50%] md:w-[50%] w-[100%] bg-gradient-to-tl from-[#8BB9FF]/10 to-[#02071D] rounded-xl p-8 border-2 border-[#262B3B] shadow-lg">
                         <div className="grid place-content-center">
                             <img src={why2} alt="" className="w-[100%]" />
                         </div>
-                        <h5 className="text-white text-justify px-2 text-base font-dmsans font-semibold">Developer-Centric</h5>
-                        <p className="text-white text-justify px-2 text-base font-dmsans font-normal">
+                        <h5 className="text-white text-justify p-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-semibold">Developer-Centric</h5>
+                        <p className="text-white text-justify px-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-normal">
                             Built with developers in mind, we integrate seamlessly with popular wallets and provide robust security for token management.
                         </p>
                     </div>
-                    <div className="lg:w-[50%] md:w-[50%] w-[100%]  bg-[#8BB9FF]/10 rounded-xl p-8">
+                    <div className="lg:w-[50%] md:w-[50%] w-[100%] bg-gradient-to-tl from-[#8BB9FF]/10 to-[#02071D] rounded-xl p-8 border-2 border-[#262B3B] shadow-lg">
                         <div className="grid place-content-center">
                             <img src={why3} alt="" className="w-[100%]" />
                         </div>
-                        <h5 className="text-white text-justify px-2 text-base font-dmsans font-semibold">Future-Proof</h5>
-                        <p className="text-white text-justify px-2 text-base font-dmsans font-normal">
+                        <h5 className="text-white text-justify p-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-semibold">Future-Proof</h5>
+                        <p className="text-white text-justify px-2 text-[14px] md:text-[16px] lg:text-[16px] font-dmsans font-normal">
                             Stay ahead of the curve with our commitment to innovation and multi-chain compatibility.
                         </p>
                     </div>

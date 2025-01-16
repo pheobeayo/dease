@@ -1,14 +1,15 @@
-import { DNA } from 'react-loader-spinner';
+import { InfinitySpin } from 'react-loader-spinner';
 
 const LoadingSpinner = () => (
   <div className='text-center grid place-content-center'>
-    <DNA
-      height={80}
-      width={80}
+    <InfinitySpin
+      height={300}
+      width={300}
       wrapperStyle={{}}
-      wrapperClass='dna-wrapper'
+      wrapperClass='infinity-spin-wrapper'
       visible={true}
-      ariaLabel='dna-loading'
+      color='#0267FF'
+      ariaLabel='infinity-spin-loading'
       strokeWidth={2}
       strokeWidthSecondary={2}
     />

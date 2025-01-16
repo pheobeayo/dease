@@ -3,6 +3,7 @@ import vector from "../assets/vector.svg";
 import ellipse1 from "../assets/ellipse1.svg";
 import ellipse2 from "../assets/ellipse2.svg";
 import bgImg from "../assets/bgImg.svg";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -28,10 +29,15 @@ const Home = () => {
           <p className="text-white font-normal font-sans ">
             Empower your blockchain projects with Dease: Deploy, manage, and innovate—securely and efficiently.
           </p>
+          <div className="grid place-content-center my-8">
+            <Link to='/dashboard/deploy_token'>  <button className="bg-[#0267FF] text-white py-2 px-4 rounded-[20px] lg:text-[20px] md:text-[20px] font-bold text-[16px] w-[200px] " > Deploy Token</button>
+            </Link>
+          </div>
+
         </div>
         <section>
           <div className="rounded-full bg-circularGradient w-[100%]"
-             style={{
+            style={{
               backgroundImage: 'radial-gradient(ellipse, #02071D, #0267FF, #12BBFF, #02071D, #12BBFF, #02071D,#02071D, #02071D,  #02071D, #02071D,  #02071D )',
             }}>
             <div className="flex flex-col lg:flex-row md:flex-row justify-between lg:w-[90%] md:w-[90%] w-[100%] mx-auto mb-10">
@@ -45,7 +51,6 @@ const Home = () => {
                   <img src={ellipse2} alt="" className="hidden lg:block md:block" />
                   <img src={ellipse1} alt="" className="hidden lg:block md:block mt-96" />
                 </div>
-
               </div>
             </div>
           </div>

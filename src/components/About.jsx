@@ -3,7 +3,7 @@ import vector2 from "../assets/vector2.svg";
 
 const About = () => {
   return (
-    <div className="bg-[#8BB9FF]/10 w-[95%] rounded-xl 2xl:mx-10 lg:mx-8 md:mx-8">
+    <div className="bg-gradient-to-br from-[#8BB9FF]/10 to-[#02071D] w-[95%] rounded-xl 2xl:mx-10 lg:mx-8 md:mx-8">
       <div className="grid place-content-center">
         <h2 className="text-[#8BB9FF] lg:text-[36px] md:text-[36px] text-[26px] font-[700] my-8 text-center leading-[0.5px]">
           About Us
