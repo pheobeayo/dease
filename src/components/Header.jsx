@@ -24,7 +24,7 @@ const Header = () => {
             Dashboard
           </NavLink>
           <NavLink
-            to="/deploy_token"
+            to="/dashboard/deploy_token"
             className="text-white  hover:text-[#8BB9FF] hover:font-[700] text-[18px]"
           >
             Deploy Token
@@ -49,7 +49,7 @@ const Header = () => {
             Dashboard
           </NavLink>
           <NavLink
-            to="/deploy_token"
+            to="/dashboard/deploy_token"
             className="text-white hover:text-[#8BB9FF] hover:font-[700] mb-6 text-[18px]"
           >
             Deploy token
