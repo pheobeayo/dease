@@ -1,0 +1,225 @@
+[
+  {
+    "name": "IToksImpl",
+    "type": "impl",
+    "interface_name": "toksproject::toks::IToks"
+  },
+  {
+    "name": "toksproject::types::ContractInfo",
+    "type": "struct",
+    "members": [
+      {
+        "name": "contract_address",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "name": "deployment_time",
+        "type": "core::integer::u64"
+      },
+      {
+        "name": "deployer",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ]
+  },
+  {
+    "name": "toksproject::types::UserDetails",
+    "type": "struct",
+    "members": [
+      {
+        "name": "user_address",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "name": "addresses_len",
+        "type": "core::integer::u32"
+      }
+    ]
+  },
+  {
+    "name": "core::byte_array::ByteArray",
+    "type": "struct",
+    "members": [
+      {
+        "name": "data",
+        "type": "core::array::Array::<core::bytes_31::bytes31>"
+      },
+      {
+        "name": "pending_word",
+        "type": "core::felt252"
+      },
+      {
+        "name": "pending_word_len",
+        "type": "core::integer::u32"
+      }
+    ]
+  },
+  {
+    "name": "core::integer::u256",
+    "type": "struct",
+    "members": [
+      {
+        "name": "low",
+        "type": "core::integer::u128"
+      },
+      {
+        "name": "high",
+        "type": "core::integer::u128"
+      }
+    ]
+  },
+  {
+    "name": "toksproject::toks::IToks",
+    "type": "interface",
+    "items": [
+      {
+        "name": "get_all_deployed_contract",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::array::Array::<core::starknet::contract_address::ContractAddress>"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "name": "get_all_deployed_contract_by_user",
+        "type": "function",
+        "inputs": [
+          {
+            "name": "user_address",
+            "type": "core::starknet::contract_address::ContractAddress"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "core::array::Array::<core::starknet::contract_address::ContractAddress>"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "name": "get_a_contract_details",
+        "type": "function",
+        "inputs": [
+          {
+            "name": "deployed_address",
+            "type": "core::starknet::contract_address::ContractAddress"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "toksproject::types::ContractInfo"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "name": "get_user_details",
+        "type": "function",
+        "inputs": [
+          {
+            "name": "user_address",
+            "type": "core::starknet::contract_address::ContractAddress"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "toksproject::types::UserDetails"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "name": "get_owner",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::starknet::contract_address::ContractAddress"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "name": "deploy_token",
+        "type": "function",
+        "inputs": [
+          {
+            "name": "owner",
+            "type": "core::starknet::contract_address::ContractAddress"
+          },
+          {
+            "name": "token_name",
+            "type": "core::byte_array::ByteArray"
+          },
+          {
+            "name": "token_symbol",
+            "type": "core::byte_array::ByteArray"
+          },
+          {
+            "name": "total_supply",
+            "type": "core::integer::u256"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      }
+    ]
+  },
+  {
+    "name": "constructor",
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ]
+  },
+  {
+    "kind": "struct",
+    "name": "toksproject::toks::Toks::TokenDeployed",
+    "type": "event",
+    "members": [
+      {
+        "kind": "key",
+        "name": "owner",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "kind": "key",
+        "name": "token_address",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "kind": "key",
+        "name": "token_name",
+        "type": "core::byte_array::ByteArray"
+      },
+      {
+        "kind": "data",
+        "name": "token_symbol",
+        "type": "core::byte_array::ByteArray"
+      },
+      {
+        "kind": "data",
+        "name": "total_supply",
+        "type": "core::integer::u256"
+      }
+    ]
+  },
+  {
+    "kind": "enum",
+    "name": "toksproject::toks::Toks::Event",
+    "type": "event",
+    "variants": [
+      {
+        "kind": "nested",
+        "name": "TokenDeployed",
+        "type": "toksproject::toks::Toks::TokenDeployed"
+      }
+    ]
+  }
+]

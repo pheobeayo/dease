@@ -1,0 +1,71 @@
+import React, { useState } from "react";
+import { useConnect, useDisconnect, useAccount } from "@starknet-react/core";
+import { Modal, Box } from "@mui/material";
+import { useBalance } from "@starknet-react/core";
+
+const ConnectButton = () => {
+  const { connect, connectors } = useConnect();
+  const { disconnect } = useDisconnect();
+  const { address, status } = useAccount();
+  const [showModal, setShowModal] = useState(false);
+  const handleCloseModal = () => setShowModal(false);
+  const handleOpenModal = () => setShowModal(true);
+
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    borderRadius: "10px",
+    boxShadow: 24,
+    bgcolor: "#203047",
+  };
+
+  const { data, error } = useBalance({address});
+  // console.log(data, error)
+
+  return (
+    <div>
+      {!address ? (
+        <button
+           className="text-white hover:text-[#8BB9FF] hover:font-[700] mb-6 text-[18px]"
+          onClick={handleOpenModal}
+        >
+          Connect Wallet
+        </button>
+      ) : (
+        <div className="flex items-center space-x-2">
+          <div className="text-sm bg-gray-200 px-4 py-2 text-black">
+            Connected: {address.slice(0, 6)}...{address.slice(-4)}
+          </div>
+          <button
+            onClick={() => disconnect()}
+            className="text-dark font-semibold py-2 px-4 bg-skyblue hover:bg-dark"
+          >
+            Disconnect
+          </button>
+        </div>
+      )}
+      <Modal open={showModal} onClose={handleCloseModal}>
+        <Box sx={style} className="w-[90%] lg:w-[30%] md:w-[30%] p-8">
+          {connectors.map((connector) => (
+            <div key={connector.id}>
+              <button
+                onClick={() => {
+                  connect({ connector });
+                  handleCloseModal();
+                }}
+                variant="outline"
+                className="text-white border-white border w-[100%] mb-4 py-4 rounded-lg px-8"
+              >
+                Connect {connector.name}
+              </button>
+            </div>
+          ))}
+        </Box>
+      </Modal>
+    </div>
+  );
+};
+
+export default ConnectButton;
