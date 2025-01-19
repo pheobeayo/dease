@@ -10,11 +10,10 @@ Dease is a web3 developer tool designed to streamline the deployment of blockcha
 2. [Core Features](#core-features)
 3. [Getting Started](#getting-started)
 4. [How It Works](#how-it-works)
-5. [Platform Goals](#platform-goals)
+5. [Proposed Solution](#proposed-solution)
 6. [Technologies Used](#technologies-used)
-7. [Contributing](#contributing)
+7. [Links](#links)
 8. [License](#license)
-9. [Contact](#contact)
 
 ---
 
@@ -60,26 +59,48 @@ Overview of all deployed tokens:
 
 ---
 
-## Getting Started
+
+## Proposed Solution
+Dease simplifies the token creation process by providing a user-friendly platform where developers can:
 
 
+- Connect their wallet and access the dashboard.
 
 
-## How It Works
+- Deploy tokens by inputting basic details such as the token name, symbol, and total supply.
 
 
+- Easily access and copy the contract address for further use.
 
-## Platform Goals
+
+- Track the history of all deployed tokens along with their total supply and balance in one centralized dashboard.
+
 
 
 
 ## Technologies Used
-
+- Frontend : React , Vite , Tailwind CSS, mui/material , starknet react, starknet JS
+- Smart Contract : 
 
 ---
 
-## Contributing
+## Links
 
+### Pitch Deck
+ ```bash 
+
+
+https://www.canva.com/design/DAGcLunbkO0/o_UeqydxRXNMYTMLXl-7oA/view?utm_content=DAGcLunbkO0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0fed73efee 
+
+
+```
+
+### Demo link
+
+```bash
+
+
+```
 
 
 ## License
@@ -88,7 +109,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ---
 
-## Contact
-
-Have questions, feedback, or suggestions? Reach out to us:
 

@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect } from 'react'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Outlet, Navigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useAccount } from "@starknet-react/core";
-import { useNavigate } from "react-router-dom";
+
 
 const HomeLayout = () => {
   const navigate = useNavigate();
