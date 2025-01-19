@@ -1,5 +1,7 @@
 # Dease
 Product Overview:
+
+
 Dease is a web3 developer tool designed to streamline the deployment of blockchain-based tokens. The platform enables developers to quickly create tokens by providing key inputs, deploy them on the blockchain, and access important token details such as contract addresses. Additionally, Dease offers a tracking mechanism to maintain a history of all deployed tokens, including their total supply and balance.
 
 ---
@@ -24,13 +26,14 @@ Dease simplifies the token creation process by providing a user-friendly platfor
 - Easily access and copy the contract address for further use.
 - Track the history of all deployed tokens along with their total supply and balance in one centralized dashboard.
 
-
+---
 
 
 ### Why Dease?
 
 Creating and managing blockchain-based tokens is often complex, requiring advanced technical skills and knowledge of smart contracts. This process can deter developers who lack extensive blockchain expertise. Furthermore, keeping track of multiple deployed tokens and their details can be cumbersome without an intuitive interface.
 
+---
 
 ## Core Features
 1. Wallet Integration:
@@ -75,7 +78,7 @@ Dease simplifies the token creation process by providing a user-friendly platfor
 
 - Track the history of all deployed tokens along with their total supply and balance in one centralized dashboard.
 
-
+---
 
 
 ## Technologies Used
@@ -102,6 +105,7 @@ https://www.canva.com/design/DAGcLunbkO0/o_UeqydxRXNMYTMLXl-7oA/view?utm_content
 
 ```
 
+---
 
 ## License
 
