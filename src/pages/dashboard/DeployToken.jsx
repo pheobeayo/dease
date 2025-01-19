@@ -137,6 +137,11 @@ const DeployToken = () => {
               border: "1px solid #8C8F97",
               "& .MuiInputLabel-root": { color: "#8C8F97" },
               "& .MuiInputLabel-root.Mui-focused": { color: "#0267FF" },
+              input: {
+                color: '#8C8F97', 
+                fontSize: '15px', 
+                fontWeight: 'bold', 
+              },
             }}
             required
             fullWidth
@@ -156,6 +161,11 @@ const DeployToken = () => {
               labelColor: "#8C8F97",
               "& .MuiInputLabel-root": { color: "#8C8F97" },
               "& .MuiInputLabel-root.Mui-focused": { color: "#0267FF" },
+              input: {
+                color: '#8C8F97', 
+                fontSize: '15px', 
+                fontWeight: 'bold', 
+              },
             }}
             value={tokenName}
             onChange={(e) => setTokenName(e.target.value)}
@@ -175,6 +185,11 @@ const DeployToken = () => {
               border: "1px solid #8C8F97",
               "& .MuiInputLabel-root": { color: "#8C8F97" },
               "& .MuiInputLabel-root.Mui-focused": { color: "#0267FF" },
+              input: {
+                color: '#8C8F97', 
+                fontSize: '15px', 
+                fontWeight: 'bold', 
+              },
             }}
             required
             fullWidth
@@ -195,6 +210,12 @@ const DeployToken = () => {
               border: "1px solid #8C8F97",
               "& .MuiInputLabel-root": { color: "#8C8F97" },
               "& .MuiInputLabel-root.Mui-focused": { color: "#0267FF" },
+              input: {
+                color: '#8C8F97', 
+                fontSize: '15px', 
+                fontWeight: 'bold', 
+              },
+
             }}
             required
             fullWidth

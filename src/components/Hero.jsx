@@ -3,7 +3,6 @@ import vector from "../assets/vector.svg";
 import ellipse1 from "../assets/ellipse1.svg";
 import ellipse2 from "../assets/ellipse2.svg";
 import bgImg from "../assets/bgImg.svg";
-import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
