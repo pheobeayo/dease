@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useConnect, useDisconnect, useAccount } from "@starknet-react/core";
 import { Modal, Box } from "@mui/material";
 import { useBalance } from "@starknet-react/core";
@@ -21,8 +21,13 @@ const ConnectButton = () => {
     bgcolor: "#203047",
   };
 
-  const { data, error } = useBalance({address});
-  // console.log(data, error)
+  useEffect(() => {
+    if (address) {
+      localStorage.setItem("walletAddress", address);
+    } else {
+      localStorage.removeItem("walletAddress");
+    }
+  }, [address]);
 
   return (
     <div>
