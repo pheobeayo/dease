@@ -83,7 +83,8 @@ Dease simplifies the token creation process by providing a user-friendly platfor
 
 ## Technologies Used
 - Frontend : React , Vite , Tailwind CSS, mui/material , starknet react, starknet JS
-- Smart Contract : 
+- Smart Contract : Cairo, Scarb, Snforge, Sncast, Starkli
+- Deployed on starknet : 0x04a36f5c074a2216f103a2614c2a22ea41b2c09ec5650cb7d80786379ee8609c
 
 ---
 
@@ -98,9 +99,25 @@ https://www.canva.com/design/DAGcLunbkO0/o_UeqydxRXNMYTMLXl-7oA/view?utm_content
 
 ```
 
-### Demo link
+### Demo Video link
 
 ```bash
+
+https://youtu.be/dHERjUaDVwA
+
+```
+### Deployed link
+
+```bash
+
+https://dease.vercel.app/
+
+```
+### Design: 
+
+```bash
+
+https://www.figma.com/proto/Q9cee4NgPquFWRUB7yEd8V/DEASE?node-id=159-3344&p=f&t=NYrHd48AhHi3hkKc-0&scaling=min-zoom&content-scaling=fixed&page-id=159%3A5&starting-point-node-id=159%3A3344
 
 
 ```
