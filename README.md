@@ -83,8 +83,8 @@ Dease simplifies the token creation process by providing a user-friendly platfor
 
 ## Technologies Used
 - Frontend : React , Vite , Tailwind CSS, mui/material , starknet react, starknet JS
-- Smart Contract : Cairo, Scarb, Snforge, Sncast, Starkli
-- Deployed on starknet : 0x04a36f5c074a2216f103a2614c2a22ea41b2c09ec5650cb7d80786379ee8609c
+- Smart Contract : Cairo,  Scarb, SN Cast, Starkly, Open Zeppelin, Katana, Argentx
+- Deployed on Starknet Sepolia : 0x04a36f5c074a2216f103a2614c2a22ea41b2c09ec5650cb7d80786379ee8609c
 
 ---
 

@@ -48,15 +48,15 @@ const Home = () => {
         </div>
         <section>
           <div
-            className="rounded-full bg-circularGradient w-[100%]"
+            className="rounded-full bg-circularGradient w-[100%] bg-cover"
             style={{
               backgroundImage:
                 "radial-gradient(ellipse, #02071D, #0267FF, #12BBFF, #02071D, #12BBFF, #02071D,#02071D, #02071D,  #02071D, #02071D,  #02071D )",
             }}
           >
-            <div className="flex flex-col lg:flex-row md:flex-row justify-between lg:w-[90%] md:w-[90%] w-[100%] mx-auto mb-10">
-              <div className="flex justify-between items-center lg:w-[100%] md:w-[100%] w-[90%]">
-                <div className="flex justify-between lg:w-[20%] md:w-[20%] ">
+            <div className="flex flex-col 2xl:flex-row xl:flex-row lg:flex-row md:flex-row justify-between lg:w-[90%] md:w-[90%] w-[100%] mx-auto mb-10">
+              <div className="flex justify-between items-center 2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] w-[90%]">
+                <div className="flex justify-between lg:w-[20%] md:w-[20%] xl:w-[20%] 2xl:w-[20%]">
                   <img
                     src={ellipse2}
                     alt=""
@@ -68,8 +68,10 @@ const Home = () => {
                     className="hidden lg:block md:block"
                   />
                 </div>
-                <img src={bgImg} alt="" className="ml-auto" />
-                <div className="flex justify-between  lg:w-[20%] md:w-[20%]">
+                <div className="xl:w-[60%] 2xl:w-[60%] lg:w-[60%] md:w-[60%]">
+                <img src={bgImg} alt="" className="w-[100%]" />
+                </div>
+                <div className="flex justify-between lg:w-[20%] md:w-[20%] 2xl:w-[20%] xl:w-[20%]">
                   <img
                     src={ellipse2}
                     alt=""
